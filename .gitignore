@@ -1,18 +1,9 @@
-# Token e variáveis privadas
 .env
-
-# Cache do Python
 __pycache__/
 *.py[cod]
-
-# Ambientes virtuais
 venv/
 .venv/
 env/
-
-# Arquivos de IDEs
 .vscode/
 .idea/
-
-# Logs
 *.log

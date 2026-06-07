@@ -5,22 +5,13 @@ import asyncio
 import discord
 from discord.ext import commands
 
-# =========================
-# CONFIG DIRETA (SEM ENV)
-# =========================
 TOKEN = os.getenv("TOKEN")
 PREFIX = os.getenv("PREFIX", "!")
 
-# =========================
-# INTENTS
-# =========================
 intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 
-# =========================
-# BOT SETUP
-# =========================
 class MyBot(commands.Bot):
     def __init__(self):
         super().__init__(
@@ -48,9 +39,6 @@ class MyBot(commands.Bot):
         print(f"\n[ONLINE] Logado como {self.user} (ID: {self.user.id})")
         print("------")
 
-# =========================
-# START BOT
-# =========================
 async def main():
     bot = MyBot()
 
